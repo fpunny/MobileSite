@@ -18,9 +18,9 @@ a {
 
 .bar {
     display: none;
-    width: 23px;
-    height: 3px;
-    margin: 3px;
+    width: 26px;
+    height: 4px;
+    margin: 4px;
     background-color: white;
 }
 
@@ -34,9 +34,9 @@ nav ul {
 nav ul li {
     display: flex;
     align-items: center;
-    font-size: 14px;
-    height: 34px;
-    padding: 0px 18px;
+    font-size: 18px;
+    height: 40px;
+    padding: 0px 20px;
     transition: background-color 0.4s ease 0s;
 }
 
@@ -49,7 +49,7 @@ nav ul li:hover {
     nav ul {
         flex-direction: column-reverse;
         position: relative;
-        top: -102px;
+        top: -120px;
         padding: 0;
     }
     

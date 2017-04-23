@@ -6,7 +6,7 @@ function drop() {
         nav.style.top = '0px';
         dropped = true;
     } else {
-        nav.style.top = '-102px';
+        nav.style.top = '-120px';
         dropped = false;
     }
 }
