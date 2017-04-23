@@ -6,6 +6,7 @@
 } 
 
 .default {
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -15,13 +16,17 @@ a {
 }
 
 nav ul {
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -ms-flex-pack: center;
+        justify-content: center;
     top: -126px;
     background-color: #465362;
-    justify-content: flex-end;
+    -ms-flex-pack: end;
+        justify-content: flex-end;
     list-style-type: none;
-    flex-grow: 1;
+    -ms-flex-positive: 1;
+        flex-grow: 1;
     margin: 0;
     padding: 0 10px;
 }
@@ -52,10 +57,12 @@ nav ul li:hover {
         position: relative;
         transition: top 0.5s ease 0s;
         padding: 0;
-        flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
     }
     
     .bar {
+        display: -ms-flexbox;
         display: flex;
     }
 
