@@ -14,12 +14,10 @@ a {
     color: white;
 }
 
-nav {
-    top: 0;
-}
-
 nav ul {
     display: flex;
+    justify-content: center;
+    top: -126px;
     background-color: #465362;
     justify-content: flex-end;
     list-style-type: none;
@@ -29,7 +27,7 @@ nav ul {
 }
 
 nav ul li {
-    font-size: 15px;
+    font-size: 92%;
     height: 10px;
     padding: 16px 20px;
     background-color: #465362;
@@ -49,12 +47,10 @@ nav ul li:hover {
 }
 
 @media screen and (max-width: 500px) {
-    nav {
-        top: -126px;
-        transition: top 0.5s ease 0s;
-    }
-
     nav ul {
+        top: -126px;
+        position: relative;
+        transition: top 0.5s ease 0s;
         padding: 0;
         flex-direction: column-reverse;
     }
