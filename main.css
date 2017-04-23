@@ -1,69 +1,55 @@
 .default, body, html {
+    display: flex;
+    font-family: 'Flamenco', cursive;
+    text-decoration: none;
+    list-style-type: none;
     margin: 0;
     padding: 0;
-    font-family: 'Yanone Kaffeesatz', sans-serif;
-    color: white;
-} 
-
-.default {
-    display: -ms-flexbox;
-    display: flex;
-}
-
-a {
-    text-decoration: none;
     color: white;
 }
 
-nav ul {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: center;
-        justify-content: center;
-    top: -126px;
-    background-color: #465362;
-    -ms-flex-pack: end;
-        justify-content: flex-end;
-    list-style-type: none;
-    -ms-flex-positive: 1;
-        flex-grow: 1;
-    margin: 0;
-    padding: 0 10px;
-}
-
-nav ul li {
-    font-size: 92%;
-    height: 10px;
-    padding: 16px 20px;
-    background-color: #465362;
-    transition: background-color 0.5s linear 0s;
-}
-
-nav ul li:hover {
-    background-color: #65788E;
+* {
+    box-sizing: border-box;
 }
 
 .bar {
     display: none;
-    width: 24px;
+    width: 23px;
     height: 3px;
-    margin: 3px 0;
+    margin: 3px;
     background-color: white;
 }
 
-@media screen and (max-width: 500px) {
+nav ul {
+    background-color: #1E2D24;
+    padding: 0 15px;
+    width: 100%;
+    transition: top 0.6s ease 0s;
+}
+
+nav ul li {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    height: 34px;
+    padding: 0px 18px;
+    transition: background-color 0.4s ease 0s;
+}
+
+nav ul li:hover {
+    background-color: #3E4742;
+}
+
+/* Portrait and Landscape */
+@media only screen and (max-width: 550px) { 
     nav ul {
-        top: -126px;
+        flex-direction: column-reverse;
         position: relative;
-        transition: top 0.5s ease 0s;
+        top: -102px;
         padding: 0;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
     }
     
     .bar {
-        display: -ms-flexbox;
-        display: flex;
+        display: block;
     }
-
 }
