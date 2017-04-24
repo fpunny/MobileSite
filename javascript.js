@@ -1,4 +1,5 @@
 var dropped = false;
+var index = '1';
 
 function drop() {
     var nav = document.getElementById('nav');
